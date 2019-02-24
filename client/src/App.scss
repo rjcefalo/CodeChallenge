@@ -1,0 +1,21 @@
+@import "../styles/colors.scss"; // assuming a styles directory under src/
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.App-header {
+  background-color: $prueba;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+}
+
+footer h5 {
+  height: 3%;
+  margin: 4px 0px;
+}
