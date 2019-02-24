@@ -1,19 +1,23 @@
 import React, { Component } from "react";
 
 import "./Home.scss";
-import CocktailBase from "./cocktailBase/CocktailBase";
-import CocktailName from "./cocktailName/CocktailName";
-import CocktailPic from "./cocktailPic/CocktailPic";
-import TopCocktail from "./topCocktail/TopCocktail";
+
+import { Link, Switch, Route } from "react-router-dom";
+
+
+import Adds from "./Adds"
+import ProductListContainer from "../productListContainer/ProductListContainer";
+import ProductDetailComponent from "../productDetailComponent/ProductDetailComponent";
 
 class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <CocktailBase />
-        <CocktailName />
-        <CocktailPic />
-        <TopCocktail />
+        <ProductListContainer />
+        <Switch>
+          <Route exact path="/" component={Adds} />
+          <Route exact path="/:id" component={ProductDetailComponent} />
+        </Switch>
       </div>
     );
   }

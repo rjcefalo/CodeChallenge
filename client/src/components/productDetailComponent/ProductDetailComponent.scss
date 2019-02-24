@@ -1,0 +1,28 @@
+.ProductDetailComponent{
+    width: 70%;
+    height: 100%;
+
+}
+
+.Model{
+    height: 30vh;
+    width: auto;
+}
+
+h2{
+    font-weight: bolder; 
+}
+
+h1,h2{
+    margin: 20px 0;
+}
+
+.Details{
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .ProductDetailComponent {
+      width: 100%; 
+    }
+}

@@ -3,22 +3,21 @@ const router = express.Router();
 
 const products = [
   {
-    image: "",
-    title: "iphone",
-    description: "apple",
-    color: "black",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0e/IPhone_5s_Black.png",
+    title: "iPhone",
+    description: "Apple",
+    color: "Black",
     price: 200
   },
   {
-    image: "",
-    title: "galaxy",
-    description: "samsung",
-    color: "silver",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/42/Samsung_Galaxy_S7.png",
+    title: "Galaxy",
+    description: "Samsung",
+    color: "Silver",
     price: 100
   }
 ];
 
-/* GET home page. */
 router.get("/products", (req, res, next) => {
   res.status(200).json(products);
 });

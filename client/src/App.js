@@ -9,13 +9,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Header</h1>
+          <h1>Check our products</h1>
         </header>
         <Home />
         <footer>
-          <h5>
-            By Ricardo Céfalo
-          </h5>
+          <h5>By Ricardo Céfalo</h5>
         </footer>
       </div>
     );
